@@ -390,7 +390,7 @@
     var data = null;
 
     // display loading message
-    showLoadingMessage('Loading nearby items...');
+    showLoadingMessage('Loading nearby jobs...');
 
     // make AJAX call
     ajax('GET', url + '?' + params, data,
@@ -398,14 +398,14 @@
       function(res) {
         var items = JSON.parse(res);
         if (!items || items.length === 0) {
-          showWarningMessage('No nearby item.');
+          showWarningMessage('No nearby job.');
         } else {
           listItems(items);
         }
       },
       // failed callback
       function() {
-        showErrorMessage('Cannot load nearby items.');
+        showErrorMessage('Cannot load nearby jobs.');
       }
     );
   }
@@ -423,18 +423,18 @@
     var req = JSON.stringify({});
 
     // display loading message
-    showLoadingMessage('Loading favorite items...');
+    showLoadingMessage('Loading favorite jobs...');
 
     // make AJAX call
     ajax('GET', url + '?' + params, req, function(res) {
       var items = JSON.parse(res);
       if (!items || items.length === 0) {
-        showWarningMessage('No favorite item.');
+        showWarningMessage('No favorite job.');
       } else {
         listItems(items);
       }
     }, function() {
-      showErrorMessage('Cannot load favorite items.');
+      showErrorMessage('Cannot load favorite jobs.');
     });
   }
 
@@ -450,7 +450,7 @@
     var data = null;
 
     // display loading message
-    showLoadingMessage('Loading recommended items...');
+    showLoadingMessage('Loading recommended jobs...');
 
     // make AJAX call
     ajax('GET', url, data,
@@ -458,14 +458,14 @@
       function(res) {
         var items = JSON.parse(res);
         if (!items || items.length === 0) {
-          showWarningMessage('No recommended item. Make sure you have favorites.');
+          showWarningMessage('No recommended job. Make sure you have favorites.');
         } else {
           listItems(items);
         }
       },
       // failed callback
       function() {
-        showErrorMessage('Cannot load recommended items.');
+        showErrorMessage('Cannot load recommended jobs.');
       }
     );
   }

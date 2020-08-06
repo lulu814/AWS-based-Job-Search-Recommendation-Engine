@@ -5,7 +5,8 @@
 }
 
 body {
-	background: #434343;
+	/* background: #434343; */
+	background: #eee2dc;
 	color: #FFFFFF;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -21,7 +22,8 @@ ul {
  */
 .top-header {
 	align-items: center;
-	background: #DF574B;
+	/* background: #DF574B; */
+	background: #ac3b61;
 	box-shadow: 0px 2px 10px #333333;
 	display: flex;
 	height: 60px;
@@ -34,7 +36,8 @@ ul {
 .avatar {
 	background: #FFFFFF;
 	border-radius: 50%;
-	color: #333C4D;
+	/* color: #333C4D; */
+	color: #BC986A;
 	height: 40px;
 	margin-right: 20px;
     margin-left: 10px;
@@ -99,7 +102,7 @@ ul {
 }
 
 .container>header span {
-	color: #FBAF41;
+	color: #EDC7B7;
 }
 
 /**
@@ -192,7 +195,7 @@ ul {
  * main section
  */
 .main-section {
-	background: #F3BB43;
+	background: #EDC7B7;
 }
 
 /**
@@ -325,7 +328,7 @@ ul {
  * footer section
  */
 footer {
-	background: #434343;
+	background: #123C69;
 	font-size: 0.8em;
 	height: 200px;
 	position: relative;
