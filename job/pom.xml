@@ -6,11 +6,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>laiproject</groupId>
-	<artifactId>jupiter</artifactId>
+	<artifactId>job</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>jupiter Maven Webapp</name>
+	<name>job Maven Webapp</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -63,6 +63,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>jupiter</finalName>
+		<finalName>job</finalName>
 	</build>
 </project>
